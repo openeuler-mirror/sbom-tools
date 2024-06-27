@@ -1,0 +1,5 @@
+excludes:
+  scopes:
+  - pattern: "require-dev"
+    reason: "DEV_DEPENDENCY_OF"
+    comment: "Packages for development only."

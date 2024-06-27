@@ -1,0 +1,13 @@
+{
+    "ignorePatterns": [
+        {
+            "pattern": "^#.*$"
+        },
+        {
+            "pattern": "^https://fpchat-invite.herokuapp.com/$"
+        },
+        {
+            "pattern": "^https://source.android.com/setup/develop/repo$"
+        }
+    ]
+}

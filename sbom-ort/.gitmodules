@@ -1,0 +1,20 @@
+[submodule "example-python-flask"]
+	path = analyzer/src/funTest/assets/projects/external/example-python-flask
+	url = https://github.com/deis/example-python-flask.git
+	ignore = untracked
+[submodule "spdx-tools-python"]
+	path = analyzer/src/funTest/assets/projects/external/spdx-tools-python
+	url = https://github.com/spdx/tools-python.git
+	ignore = untracked
+[submodule "quickcheck-state-machine"]
+	path = analyzer/src/funTest/assets/projects/external/quickcheck-state-machine
+	url = https://github.com/advancedtelematic/quickcheck-state-machine.git
+	ignore = untracked
+[submodule "sbt-multi-project-example"]
+	path = analyzer/src/funTest/assets/projects/external/sbt-multi-project-example
+	url = https://github.com/pbassiner/sbt-multi-project-example.git
+	ignore = untracked
+[submodule "dart-http"]
+	path = analyzer/src/funTest/assets/projects/external/dart-http
+	url = https://github.com/dart-lang/http.git
+	ignore = untracked

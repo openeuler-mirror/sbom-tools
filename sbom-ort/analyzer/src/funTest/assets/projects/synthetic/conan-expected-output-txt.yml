@@ -1,0 +1,211 @@
+---
+project:
+  id: "Conan::conanfile.txt:"
+  definition_file_path: "analyzer/src/funTest/assets/projects/synthetic/conan-txt/conanfile.txt"
+  declared_licenses: []
+  declared_licenses_processed: {}
+  vcs:
+    type: "Git"
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: "Git"
+    url: "<REPLACE_URL>"
+    revision: "<REPLACE_REVISION>"
+    path: "<REPLACE_PATH>"
+  homepage_url: ""
+  scopes:
+  - name: "build_requires"
+    dependencies:
+    - id: "Conan::libxslt:1.1.34"
+      dependencies:
+      - id: "Conan::libxml2:2.9.14"
+        dependencies:
+        - id: "Conan::libiconv:1.17"
+        - id: "Conan::zlib:1.2.12"
+  - name: "requires"
+    dependencies:
+    - id: "Conan::libcurl:7.79.1"
+      dependencies:
+      - id: "Conan::openssl:1.1.1q"
+      - id: "Conan::zlib:1.2.12"
+    - id: "Conan::zlib:1.2.12"
+packages:
+- id: "Conan::libcurl:7.79.1"
+  purl: "pkg:conan/libcurl@7.79.1"
+  declared_licenses:
+  - "MIT"
+  declared_licenses_processed:
+    spdx_expression: "MIT"
+  description: "command line tool and library for transferring data with URLs"
+  homepage_url: "https://curl.haxx.se"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://curl.se/download/curl-7.79.1.tar.gz"
+    hash:
+      value: "370b11201349816287fb0ccc995e420277fbfcaf76206e309b3f60f0eda090c2"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+- id: "Conan::libiconv:1.17"
+  purl: "pkg:conan/libiconv@1.17"
+  declared_licenses:
+  - "LGPL-2.1"
+  declared_licenses_processed:
+    spdx_expression: "LGPL-2.1-only"
+    mapped:
+      LGPL-2.1: "LGPL-2.1-only"
+  description: "Convert text to and from Unicode"
+  homepage_url: "https://www.gnu.org/software/libiconv/"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://ftp.gnu.org/gnu/libiconv/libiconv-1.17.tar.gz"
+    hash:
+      value: "8f74213b56238c85a50a5329f77e06198771e70dd9a739779f4c02f65d971313"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  is_modified: true
+- id: "Conan::libxml2:2.9.14"
+  purl: "pkg:conan/libxml2@2.9.14"
+  declared_licenses:
+  - "MIT"
+  declared_licenses_processed:
+    spdx_expression: "MIT"
+  description: "libxml2 is a software library for parsing XML documents"
+  homepage_url: "https://gitlab.gnome.org/GNOME/libxml2/-/wikis/"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://download.gnome.org/sources/libxml2/2.9/libxml2-2.9.14.tar.xz"
+    hash:
+      value: "60d74a257d1ccec0475e749cba2f21559e48139efba6ff28224357c7c798dfee"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+- id: "Conan::libxslt:1.1.34"
+  purl: "pkg:conan/libxslt@1.1.34"
+  declared_licenses:
+  - "MIT"
+  declared_licenses_processed:
+    spdx_expression: "MIT"
+  description: "libxslt is a software library implementing XSLT processor, based on\
+    \ libxml2"
+  homepage_url: "https://xmlsoft.org"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.34.tar.xz"
+    hash:
+      value: "28c47db33ab4daefa6232f31ccb3c65260c825151ec86ec461355247f3f56824"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  is_modified: true
+- id: "Conan::openssl:1.1.1q"
+  purl: "pkg:conan/openssl@1.1.1q"
+  declared_licenses:
+  - "OpenSSL"
+  declared_licenses_processed:
+    spdx_expression: "OpenSSL"
+  description: "A toolkit for the Transport Layer Security (TLS) and Secure Sockets\
+    \ Layer (SSL) protocols"
+  homepage_url: "https://github.com/openssl/openssl"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://www.openssl.org/source/openssl-1.1.1q.tar.gz"
+    hash:
+      value: "d7939ce614029cdff0b6c20f0e2e5703158a489a72b2507b8bd51bf8c8fd10ca"
+      algorithm: "SHA-256"
+  vcs:
+    type: "Git"
+    url: "https://github.com/openssl/openssl.git"
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: "Git"
+    url: "https://github.com/openssl/openssl.git"
+    revision: ""
+    path: ""
+  is_modified: true
+- id: "Conan::zlib:1.2.12"
+  purl: "pkg:conan/zlib@1.2.12"
+  declared_licenses:
+  - "Zlib"
+  declared_licenses_processed:
+    spdx_expression: "Zlib"
+  description: "A Massively Spiffy Yet Delicately Unobtrusive Compression Library\
+    \ (Also Free, Not to Mention Unencumbered by Patents)"
+  homepage_url: "https://zlib.net"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://zlib.net/fossils/zlib-1.2.12.tar.gz"
+    hash:
+      value: "91844808532e5ce316b3c010929493c0244f3d37593afd6de04f71821d5136d9"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  is_modified: true
