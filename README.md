@@ -1,7 +1,7 @@
 # sbom-tools
 
 #### 介绍
-A tools named sbom-tools, designed for generating the sbom file.
+基于SBOM开源工具改造，包含：ort、eBPF、syft，SBOM基础能力工具。
 
 #### 软件架构
 软件架构说明
@@ -9,15 +9,18 @@ A tools named sbom-tools, designed for generating the sbom file.
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+详见
+sbom-tools/sbom-generator/README.md
+sbom-tools/sbom-ort/README.md
+sbom-tools/sbom-tracer/README.md
+
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+详见
+sbom-tools/sbom-generator/README.md
+sbom-tools/sbom-ort/README.md
+sbom-tools/sbom-tracer/README.md
 
 #### 参与贡献
 
