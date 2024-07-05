@@ -1,0 +1,89 @@
+# Configuration of detekt rule sets, see https://arturbosch.github.io/detekt/comments.html.
+# This file only lists the differences to the default configuration at
+# https://github.com/arturbosch/detekt/blob/master/detekt-cli/src/main/resources/default-detekt-config.yml.
+
+comments:
+  AbsentOrWrongFileLicense:
+    active: true
+    licenseTemplateFile: '.detekt.license.template'
+    licenseTemplateIsRegex: true
+
+complexity:
+  ComplexMethod:
+    threshold: 33
+  LongMethod:
+    threshold: 158
+  LongParameterList:
+    constructorThreshold: 11
+    functionThreshold: 8
+  NestedBlockDepth:
+    threshold: 10
+  TooManyFunctions:
+    thresholdInClasses: 19
+    thresholdInObjects: 14
+
+# Formatting rules are implemented via the ktlint plugin. As ktlint does not allow exceptions, we need to disable
+# respective rules completely.
+formatting:
+  ChainWrapping:
+    active: false
+  FinalNewline:
+    active: false
+  ImportOrdering:
+    active: false
+  Indentation:
+    active: false
+  MaximumLineLength:
+    active: false
+  NoUnusedImports:
+    active: false
+  NoWildcardImports:
+    active: false
+  ParameterListWrapping:
+    active: false
+
+naming:
+  InvalidPackageDeclaration:
+    active: false
+
+performance:
+  SpreadOperator:
+    active: false
+
+style:
+  DestructuringDeclarationWithTooManyEntries:
+    maxDestructuringEntries: 4
+  ForbiddenComment:
+    active: false
+  LoopWithTooManyJumpStatements:
+    active: false
+  MagicNumber:
+    active: false
+  ReturnCount:
+    active: false
+  SpacingBetweenPackageAndImports:
+    active: true
+  ThrowsCount:
+    max: 5
+  UnusedImports:
+    active: true
+  WildcardImport:
+    excludes: ''
+    excludeImports:
+      - org.ossreviewtoolkit.analyzer.managers.*
+      - org.ossreviewtoolkit.cli.commands.*
+      - org.ossreviewtoolkit.downloader.vcs.*
+      - org.ossreviewtoolkit.helper.commands.*
+      - org.ossreviewtoolkit.reporter.reporters.*
+      - org.ossreviewtoolkit.scanner.scanners.*
+      - org.ossreviewtoolkit.scanner.storages.*
+      - org.ossreviewtoolkit.utils.spdx.SpdxLicense.*
+      - org.ossreviewtoolkit.utils.spdx.SpdxLicenseException.*
+      - kotlinx.html.*
+      - kotlinx.html.dom.*
+
+ORT:
+  OrtImportOrder:
+    active: true
+  OrtPackageNaming:
+    active: true

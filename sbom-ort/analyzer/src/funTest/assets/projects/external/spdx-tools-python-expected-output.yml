@@ -1,0 +1,202 @@
+---
+project:
+  id: "PIP::spdx-tools:0.5.4"
+  definition_file_path: "setup.py"
+  authors:
+  - "Ahmed H. Ismail"
+  declared_licenses:
+  - "Apache Software License"
+  - "Apache-2.0"
+  declared_licenses_processed:
+    spdx_expression: "Apache-2.0"
+    mapped:
+      Apache Software License: "Apache-2.0"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: "Git"
+    url: "https://github.com/spdx/tools-python.git"
+    revision: "a48022e65a8897d0e4f2e93d8e53695d2c13ea23"
+    path: ""
+  homepage_url: "https://github.com/spdx/tools-python"
+  scopes:
+  - name: "install"
+    dependencies:
+    - id: "PyPI::ply:3.11"
+    - id: "PyPI::rdflib:5.0.0"
+      dependencies:
+      - id: "PyPI::isodate:0.6.1"
+        dependencies:
+        - id: "PyPI::six:1.16.0"
+      - id: "PyPI::pyparsing:2.4.7"
+      - id: "PyPI::six:1.16.0"
+    - id: "PyPI::six:1.16.0"
+packages:
+- id: "PyPI::isodate:0.6.1"
+  purl: "pkg:pypi/isodate@0.6.1"
+  authors:
+  - "Gerhard Weis"
+  declared_licenses:
+  - "BSD"
+  - "BSD License"
+  declared_licenses_processed:
+    spdx_expression: "BSD-3-Clause"
+    mapped:
+      BSD: "BSD-3-Clause"
+      BSD License: "BSD-3-Clause"
+  description: "An ISO 8601 date/time/duration parser and formatter"
+  homepage_url: "https://github.com/gweis/isodate/"
+  binary_artifact:
+    url: "https://files.pythonhosted.org/packages/b6/85/7882d311924cbcfc70b1890780763e36ff0b140c7e51c110fc59a532f087/isodate-0.6.1-py2.py3-none-any.whl"
+    hash:
+      value: "c8a5fcd645030db98daa82b8e56fda89"
+      algorithm: "MD5"
+  source_artifact:
+    url: "https://files.pythonhosted.org/packages/db/7a/c0a56c7d56c7fa723988f122fa1f1ccf8c5c4ccc48efad0d214b49e5b1af/isodate-0.6.1.tar.gz"
+    hash:
+      value: "1a310658b30a48641bafb5652ad91c40"
+      algorithm: "MD5"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: "Git"
+    url: "https://github.com/gweis/isodate.git"
+    revision: ""
+    path: ""
+- id: "PyPI::ply:3.11"
+  purl: "pkg:pypi/ply@3.11"
+  authors:
+  - "David Beazley"
+  declared_licenses:
+  - "BSD"
+  declared_licenses_processed:
+    spdx_expression: "BSD-3-Clause"
+    mapped:
+      BSD: "BSD-3-Clause"
+  description: "Python Lex & Yacc"
+  homepage_url: "http://www.dabeaz.com/ply/"
+  binary_artifact:
+    url: "https://files.pythonhosted.org/packages/a3/58/35da89ee790598a0700ea49b2a66594140f44dec458c07e8e3d4979137fc/ply-3.11-py2.py3-none-any.whl"
+    hash:
+      value: "62b6ad5affddc9926ab5571f390cc840"
+      algorithm: "MD5"
+  source_artifact:
+    url: "https://files.pythonhosted.org/packages/e5/69/882ee5c9d017149285cab114ebeab373308ef0f874fcdac9beb90e0ac4da/ply-3.11.tar.gz"
+    hash:
+      value: "6465f602e656455affcd7c5734c638f8"
+      algorithm: "MD5"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+- id: "PyPI::pyparsing:2.4.7"
+  purl: "pkg:pypi/pyparsing@2.4.7"
+  authors:
+  - "Paul McGuire"
+  declared_licenses:
+  - "MIT License"
+  declared_licenses_processed:
+    spdx_expression: "MIT"
+    mapped:
+      MIT License: "MIT"
+  description: "Python parsing module"
+  homepage_url: "https://github.com/pyparsing/pyparsing/"
+  binary_artifact:
+    url: "https://files.pythonhosted.org/packages/8a/bb/488841f56197b13700afd5658fc279a2025a39e22449b7cf29864669b15d/pyparsing-2.4.7-py2.py3-none-any.whl"
+    hash:
+      value: "dbfd0a241aad2595f43377ec7f1836ea"
+      algorithm: "MD5"
+  source_artifact:
+    url: "https://files.pythonhosted.org/packages/c1/47/dfc9c342c9842bbe0036c7f763d2d6686bcf5eb1808ba3e170afdb282210/pyparsing-2.4.7.tar.gz"
+    hash:
+      value: "f0953e47a0112f7a65aec2305ffdf7b4"
+      algorithm: "MD5"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: "Git"
+    url: "https://github.com/pyparsing/pyparsing.git"
+    revision: ""
+    path: ""
+- id: "PyPI::rdflib:5.0.0"
+  purl: "pkg:pypi/rdflib@5.0.0"
+  authors:
+  - "Daniel 'eikeon' Krech"
+  declared_licenses:
+  - "BSD License"
+  - "BSD-3-Clause"
+  declared_licenses_processed:
+    spdx_expression: "BSD-3-Clause"
+    mapped:
+      BSD License: "BSD-3-Clause"
+  description: "RDFLib is a Python library for working with RDF, a simple yet powerful\
+    \ language for representing information."
+  homepage_url: "https://github.com/RDFLib/rdflib"
+  binary_artifact:
+    url: "https://files.pythonhosted.org/packages/d0/6b/6454aa1db753c0f8bc265a5bd5c10b5721a4bb24160fb4faf758cf6be8a1/rdflib-5.0.0-py3-none-any.whl"
+    hash:
+      value: "8ad1eb4d67ade138370fb45ce1cb3412"
+      algorithm: "MD5"
+  source_artifact:
+    url: "https://files.pythonhosted.org/packages/2f/ae/a50934a7ed4f9d80bbc0e0cf725c7fd2208f2e433efbf881ed0c0317a7f1/rdflib-5.0.0.tar.gz"
+    hash:
+      value: "80d7c6adc2e4040cdd8dade2e0e61403"
+      algorithm: "MD5"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: "Git"
+    url: "https://github.com/RDFLib/rdflib.git"
+    revision: ""
+    path: ""
+- id: "PyPI::six:1.16.0"
+  purl: "pkg:pypi/six@1.16.0"
+  authors:
+  - "Benjamin Peterson"
+  declared_licenses:
+  - "MIT"
+  - "MIT License"
+  declared_licenses_processed:
+    spdx_expression: "MIT"
+    mapped:
+      MIT License: "MIT"
+  description: "Python 2 and 3 compatibility utilities"
+  homepage_url: "https://github.com/benjaminp/six"
+  binary_artifact:
+    url: "https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl"
+    hash:
+      value: "529d7fd7e14612ccde86417b4402d6f3"
+      algorithm: "MD5"
+  source_artifact:
+    url: "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz"
+    hash:
+      value: "a7c927740e4964dd29b72cebfc1429bb"
+      algorithm: "MD5"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: "Git"
+    url: "https://github.com/benjaminp/six.git"
+    revision: ""
+    path: ""

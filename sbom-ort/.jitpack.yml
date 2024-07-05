@@ -1,0 +1,7 @@
+jdk:
+  - openjdk11
+
+install:
+  # Exclude dokkaJavadoc tasks to save build time.
+  # Exclude the reporter-web-app from the build because there are issues installing Yarn on JitPack.
+  - ./gradlew --no-daemon --stacktrace -x dokkaJavadoc -x :reporter-web-app:yarnBuild publishToMavenLocal
