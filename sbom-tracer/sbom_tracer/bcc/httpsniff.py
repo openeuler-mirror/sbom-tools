@@ -195,7 +195,7 @@ def cleanup():
     # get current time in seconds
     current_time = int(time.time())
     # looking for leaf having:
-    # timestap  == 0        --> update with current timestamp
+    # timestamp  == 0        --> update with current timestamp
     # AGE > MAX_AGE_SECONDS --> delete item
     for key, leaf in bpf_sessions.items():
         try:
@@ -240,7 +240,7 @@ bpf_sessions = bpf.get_table("sessions")
 packet_count = 0
 
 # dictionary containing association <key(ipsrc,ipdst,portsrc,portdst),payload_string>
-# if url is not entirely contained in only one packet, save the firt part of it in this local dict
+# if url is not entirely contained in only one packet, save the first part of it in this local dict
 # when I find \r\n in a next pkt, append and print all the url
 local_dictionary = {}
 
@@ -350,7 +350,7 @@ while 1:
         # check if the packet belong to a session saved in bpf_sessions
         if current_Key in bpf_sessions:
             # check id the packet belong to a session saved in local_dictionary
-            # (local_dictionary mantains HTTP GET/POST url not printed yet because splitted in N packets)
+            # (local_dictionary maintains HTTP GET/POST url not printed yet because splitted in N packets)
             if binascii.hexlify(current_Key) in local_dictionary:
                 # first part of the HTTP GET/POST url is already present in local dictionary (prev_payload_string)
                 prev_payload_string = local_dictionary[binascii.hexlify(current_Key)]
